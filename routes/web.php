@@ -18,3 +18,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+use App\Http\Controllers\LinkController;
+
+Route::get('/links/create', [LinkController::class, 'create'])->name('links.create');
+
