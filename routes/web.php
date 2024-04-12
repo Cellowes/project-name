@@ -24,3 +24,5 @@ use App\Http\Controllers\LinkController;
 
 Route::get('/links/create', [LinkController::class, 'create'])->name('links.create');
 
+Route::post('/links', [LinkController::class, 'store'])->name('links.store');
+
